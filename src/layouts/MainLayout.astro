@@ -1,0 +1,21 @@
+---
+import MainHead from "./MainHead.astro";
+
+interface Props {
+    title?: string;
+    descriptions?: string;
+}
+
+const { 
+        title = "Astro Blog", 
+        descriptions="Blog Astro framework"
+      } = Astro.props;
+---
+<html lang="en">
+    <MainHead {title} {descriptions} />
+	<body>
+		<slot>
+            Default
+        </slot>
+	</body>
+</html>

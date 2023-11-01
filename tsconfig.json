@@ -1,3 +1,11 @@
 {
+    "compilerOptions": {
+      "baseUrl": "localhost",
+      "paths": {
+        "@components/*": ["src/components/*"],
+        "@layouts/*": ["src/layouts/*"],
+        "@pages/*": ["src/pages/*"]
+      }
+    },
   "extends": "astro/tsconfigs/base"
 }
